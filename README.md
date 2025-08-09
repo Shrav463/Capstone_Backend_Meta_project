@@ -96,3 +96,6 @@ Django 4.1.1 (or your specific version)
 HTML5
 CSS3 (Custom styling for an attractive UI)
 
+/api/bookings/
+/api/registration/
+
