@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="container">
+    <h1>Our Daily Specials!</h1>
+    <p>Check out our amazing offers available this week.</p>
+    {# Add your special content here, e.g., images, descriptions, prices #}
+    <div class="specials-grid">
+        <div class="special-item">
+            <h3>Special Dish 1</h3>
+            <p>A delightful blend of fresh ingredients.</p>
+            <p class="price">$15.99</p>
+            <img src="{% static 'img/special1.jpg' %}" alt="Special Dish 1">
+        </div>
+        <div class="special-item">
+            <h3>Special Dish 2</h3>
+            <p>Our chef's recommendation for the day.</p>
+            <p class="price">$18.50</p>
+            <img src="{% static 'img/special2.jpg' %}" alt="Special Dish 2">
+        </div>
+        {# Add more special items as needed #}
+    </div>
+</section>
+{% endblock %}

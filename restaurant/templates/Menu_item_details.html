@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block content %}
+
+<section>
+    {% if menu_item %}
+    <h1>{{ menu_item.name }}</h1>
+    <p>Price: ${{ menu_item.price }}</p>
+    <p>Description: {{ menu_item.menu_item_description }}</p>
+    {% else %}
+    <p>Menu item not found.</p>
+    {% endif %}
+    <a href="{% url 'menu' %}">Back to Menu</a>
+</section>
+
+{% endblock %}
