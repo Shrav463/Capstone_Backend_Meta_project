@@ -1,3 +1,8 @@
+/api/bookings/
+/api/registration
+
+restaurant\static\img\api_output.png
+
 Little Lemon Restaurant Website
 This is a Django-based web application for the Little Lemon Restaurant, showcasing a modern and responsive design, dynamic menu display, table booking functionality, and a well-structured project setup. This project demonstrates core Django concepts, including models, views, templates, forms, static file management, and URL namespacing.
 Features
@@ -12,38 +17,6 @@ Menu Item Detail Pages: Each menu item has its own dedicated page with more deta
 Table Booking System: A form for customers to submit table reservations, stored in the database.
 
 About Us Page: Provides information about the restaurant.
-
-Django Admin Integration: Full CRUD (Create, Read, Update, Delete) operations for Menu items and Bookings via the Django admin interface.
-
-Modular Application Structure: Clear separation of concerns with a dedicated restaurant app.
-
-URL Namespacing: Implemented URL namespacing for better organization and to prevent URL conflicts.
-
-Static Files Management: Proper configuration for serving CSS and images.
-
-Setup Instructions
-Follow these steps to get the project up and running on your local machine.
-
-Clone the repository:
-
-git clone https://github.com/Shrav463/Django_Capstone_Basic_Website.git
-cd Django_Capstone_Basic_Website/littlelemon # Navigate to the project root
-
-Create and activate a virtual environment:
-It's highly recommended to use a virtual environment to manage project dependencies.
-
-python -m venv venv
-# On Windows:
-.\venv\Scripts\activate
-# On macOS/Linux:
-source venv/bin/activate
-
-Install dependencies:
-
-pip install Django==4.1.1 # Or your specific Django version
-# If you had a requirements.txt, you would use:
-# pip install -r requirements.txt
-
 Apply database migrations:
 This will create the necessary database tables for your models.
 
@@ -97,5 +70,6 @@ HTML5
 CSS3 (Custom styling for an attractive UI)
 
 /api/bookings/
-/api/registration/
+/api/registration
 
+restaurant\static\img\api_output.png

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # The settings for app updated for the Graded assessment
     'restaurant',
+    'rest_framework', # Add this line
 ]
 
 MIDDLEWARE = [
@@ -78,11 +79,15 @@ WSGI_APPLICATION = 'littlelemon.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'little_lemon_db',
+        'USER': 'littlelemon_user',
+        'PASSWORD': 'postgrepw',
+        'HOST': 'localhost',
+        'PORT': '5432',
+        # Removed the 'OPTIONS' dictionary here
     }
 }
-
 # The settings for media files have been updated for the Graded assessment
 MEDIA_URL = '/media/'
 
